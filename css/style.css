@@ -3,9 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --main-color : white;
+  --section-color: #f4f4f4;
+  --border-color: #ddd;
+  --card-color: #fff;
+}
+.darkmode {
+  --main-color: darkgrey;
+  --section-color: #555;
+  --border-color: darkslategray;
+  --card-color: grey;
+}
 
 body {
   font-family: "Arsenal SC";
+  background-color: var(--main-color);
 }
 
 .container {
@@ -52,12 +65,12 @@ nav a:hover {
   border-radius: 5px;
 }
 
-#nightBtn{
+#darkBtn{
   margin-inline-end: 0;
   margin-inline-start: auto;
 }
 
-#nightBtn button{
+#darkBtn{
   width: 30px;
   background-color: dimgray;
   color: white;
@@ -65,7 +78,7 @@ nav a:hover {
   border-radius: 2px;
 }
 
-#nightBtn button:hover{
+#darkBtn:hover{
   cursor: pointer;
   transform: scale(1.2);
 }
@@ -94,8 +107,8 @@ main {
 }
 
 .section {
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
+  background-color: var(--section-color);
+  border: 1px solid var(--border-color);
   padding: 1rem;
   text-align: center;
   height: 15rem;
@@ -159,7 +172,7 @@ main {
 .card {
   flex: 0 0 15rem;
   margin: 0.5rem;
-  background-color: #fff;
+  background-color: var(--card-color);
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);

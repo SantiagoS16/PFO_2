@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Personal</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -24,12 +24,12 @@
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Proyectos</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li id="nightBtn"><button>&#9728;</button></li>
+                <button id="darkBtn">&#9728;</button>
             </ul>
         </nav>
 
         <main>
-            <section class="section" id="sobre-mi">
+            <div class="section" id="sobre-mi">
                 <div>
                     <img src="img/pfp.png" alt="Imágen de perfil">
                 </div>
@@ -40,8 +40,8 @@
                         Busco mejorar constantemente, aprendiendo nuevos lenguajes de programación y tecnologías que me permitan avanzar en mi carrera como desarrollador.
                     </p>
                 </div>
-            </section>
-            <section class="section" id="habilidades">
+            </div>
+            <div class="section" id="habilidades">
                 <h2>Habilidades y Conocimientos</h2>
                 <ul>
                     <li>Programación Orientada a Objetos</li>
@@ -52,8 +52,8 @@
                     <li>Full-Stack</li>
                     <li>Inglés</li>
                 </ul>
-            </section>
-            <section class="section" id="proyectos">
+            </div>
+            <div class="section" id="proyectos">
                 <div class="slider-container">
                     <button class="arrow left" id="prevBtn">&#10094;</button>
                     <div class="slider" id="slider">
@@ -72,8 +72,8 @@
                     </div>
                     <button class="arrow right" id="nextBtn">&#10095;</button>
                 </div>
-            </section>
-            <section class="section" id="peliculas">
+            </div>
+            <div class="section" id="peliculas">
                 <h2>Mis Películas Favoritas</h2>
                 <div id="movies">
                     <div class="card">
@@ -113,8 +113,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="section" id="contacto">
+            </div>
+            <div class="section" id="contacto">
                 <h2>Contacto</h2>
                 <form action="" method="post">
                     <label for="name">Nombre:</label>
@@ -131,7 +131,7 @@
 
                     <button type="submit">Enviar</button>
                 </form>
-            </section>
+            </div>
         </main>
 
         <footer>
