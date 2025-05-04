@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portafolio Personal</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li id="nightBtn"><button>&#9728;</button></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="section" id="sobre-mi">
+                <div>
+                    <img src="img/pfp.png" alt="Imágen de perfil">
+                </div>
+                <div>
+                    <h2>Sobre Mí</h2>
+                    <p>
+                        Mi nombre es Santiago; vivo en la Ciudad Autónoma de Buenos Aires, y soy un estudiante de la Tecnicatura Superior en Desarrollo de Software en el IFTS.
+                        Busco mejorar constantemente, aprendiendo nuevos lenguajes de programación y tecnologías que me permitan avanzar en mi carrera como desarrollador.
+                    </p>
+                </div>
+            </section>
+            <section class="section" id="habilidades">
+                <h2>Habilidades y Conocimientos</h2>
+                <ul>
+                    <li>Programación Orientada a Objetos</li>
+                    <li>Base de Datos</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>HTML5</li>
+                    <li>Full-Stack</li>
+                    <li>Inglés</li>
+                </ul>
+            </section>
+            <section class="section" id="proyectos">
+                <div class="slider-container">
+                    <button class="arrow left" id="prevBtn">&#10094;</button>
+                    <div class="slider" id="slider">
+                        <div class="card">
+                            <h3>Title</h3>
+                            <p>Content</p>
+                        </div>
+                        <div class="card">
+                            <h3>Title</h3>
+                            <p>Content</p>
+                        </div>
+                        <div class="card">
+                            <h3>Title</h3>
+                            <p>Content</p>
+                        </div>
+                    </div>
+                    <button class="arrow right" id="nextBtn">&#10095;</button>
+                </div>
+            </section>
+            <section class="section" id="peliculas">
+                <h2>Mis Películas Favoritas</h2>
+                <div id="movies">
+                    <div class="card">
+                        <img src="img/sw_e3_poster.jpg" alt="Poster de Star Wars Episodio 3">
+                        <div>
+                            <h4>Star Wars: Episodio III - La venganza de los Sith</h4>
+                            <p>Es la tercera entrega de la trilogía precuela, estrenada en 2005.
+                                La película narra la caída del joven Jedi Anakin Skywalker, 
+                                quien es seducido por el lado oscuro de la Fuerza y se convierte en Darth Vader. 
+                                Mientras la República Galáctica se desmorona y el Canciller Palpatine revela su verdadera identidad como el Lord Sith Darth Sidious, 
+                                los Jedi son traicionados y casi exterminados. 
+                                Obi-Wan Kenobi lucha contra su antiguo aprendiz en un duelo épico, 
+                                marcando el trágico final de la era de los Jedi y el nacimiento del Imperio Galáctico. Es una de las entregas más oscuras y emocionales de la saga.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/aliens2_poster.jpg" alt="Poster de Aliens El Regreso">
+                        <div>
+                            <h4>Aliens: El Regreso</h4>
+                            <p>Estrenada en 1986 y dirigida por James Cameron, es la secuela del clásico de ciencia ficción Alien (1979). 
+                                La historia sigue a Ellen Ripley, la única sobreviviente del primer encuentro con la mortal criatura alienígena, 
+                                quien es enviada de nuevo al planeta LV-426 junto a un escuadrón de marines coloniales. 
+                                Allí descubren que la colonia humana ha sido devastada por una infestación de xenomorfos. 
+                                A diferencia de la primera película, más centrada en el suspenso, 
+                                esta entrega combina acción intensa con terror, y profundiza en el personaje de Ripley, consolidándola como una heroína icónica del cine.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/tlotr_poster.jpg" alt="Poster de El Señor de los Anillos">
+                        <div>
+                            <h4>El Señor de los Anillos</h4>
+                            <p>El Señor de los Anillos es una épica trilogía cinematográfica dirigida por Peter Jackson, 
+                                basada en las novelas de J.R.R. Tolkien. La saga sigue la travesía de Frodo Bolsón, 
+                                un hobbit que debe destruir un anillo mágico y maligno creado por el oscuro señor Sauron, quien busca dominar la Tierra Media. 
+                                Acompañado por sus amigos y aliados de distintas razas —humanos, elfos, enanos y otros hobbits—, Frodo se enfrenta a peligrosos enemigos y desafíos. 
+                                La trilogía está compuesta por La Comunidad del Anillo (2001), Las Dos Torres (2002) y El Retorno del Rey (2003).
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="contacto">
+                <h2>Contacto</h2>
+                <form action="" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="surname">Apellido:</label>
+                    <input type="text" name="surname" id="surname" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" name="phone" id="phone">
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <address>Mail: <a href="mailto:santiagotomas16@gmail.com">santiagotomas16@gmail.com</a></address>
+            <address>Tel: +54 11 6503 0817</address>
+        </footer>
+    </div>
+</body>
+</html>
