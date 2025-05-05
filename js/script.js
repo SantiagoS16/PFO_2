@@ -1,4 +1,4 @@
-// Modo oscuro
+// ~ ~ Modo oscuro ~ ~
 
 let darkmode = localStorage.getItem('darkmode');
 const darkBtn = document.getElementById('darkBtn');
@@ -18,7 +18,7 @@ darkBtn.addEventListener('click', function() {
     darkmode !== "active" ? enableDarkmode() : disableDarkmode();
 });
 
-// Validación del formulario
+// ~ ~ Validación del formulario ~ ~
 
 const nameField = document.getElementById('name');
 const surnameField = document.getElementById('surname');
@@ -27,7 +27,7 @@ const phoneField = document.getElementById('phone');
 const submitBtn = document.getElementById('submit');
 
 submitBtn.addEventListener('click', function() {
-    if (nameField.value && surnameField.value && emailField.value && phoneField.value) { //Si todos los campos estan completos
+    if (nameField.value && surnameField.value && emailField.value && phoneField.value) {    //Si todos los campos estan completos se guardaran los valores en un JSON
         const formData = {name: nameField.value, surname: surnameField.value, email: emailField.value, phone: phoneField.value};
         const formJSON = JSON.stringify(formData);
         localStorage.setItem('formData', formJSON);
@@ -38,15 +38,22 @@ submitBtn.addEventListener('click', function() {
         if (!nameField.value) {
             nameField.style.border = '2px solid red';
         }
+        else {nameField.style.border = '';}
+        
         if (!surnameField.value) {
             surnameField.style.border = '2px solid red';
         }
+        else {surnameField.style.border = '';}
+        
         if (!emailField.value) {
             emailField.style.border = '2px solid red';
         }
+        else {emailField.style.border = '';}
+        
         if (!phoneField.value) {
             phoneField.style.border = '2px solid red';
         }
+        else {phoneField.style.border = '';}
     }
 });
 
