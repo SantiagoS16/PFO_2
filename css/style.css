@@ -160,12 +160,12 @@ main {
   margin: 0.2rem;
 }
 
-#proyectos{
+#galeria{
   grid-area: proyectos;
 }
 
 .slider-container {
-  max-width: 20rem;
+  max-width: 75vw;
   margin: 2rem auto;
   overflow: hidden;
   position: relative;
@@ -173,8 +173,9 @@ main {
 }
 
 .slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+  max-width: 500px;
+  position: relative;
+  margin: auto;
 }
 
 .card {
@@ -199,7 +200,13 @@ main {
   height: 200px;
   width: auto;
 }
-
+.slide {
+  display: none;
+}
+.slide img {
+  height: 200px;
+  width: auto;
+}
 .arrow {
   position: absolute;
   top: 50%;

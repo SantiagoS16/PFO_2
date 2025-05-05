@@ -53,24 +53,12 @@
                     <li>Inglés</li>
                 </ul>
             </div>
-            <div class="section" id="proyectos">
+            <div class="section" id="galeria">
                 <div class="slider-container">
-                    <button class="arrow left" id="prevBtn">&#10094;</button>
+                    <button class="arrow left" id="prevBtn" onclick="changeSlide(-1)">&#10094;</button>
                     <div class="slider" id="slider">
-                        <div class="card">
-                            <h3>Title</h3>
-                            <p>Content</p>
-                        </div>
-                        <div class="card">
-                            <h3>Title</h3>
-                            <p>Content</p>
-                        </div>
-                        <div class="card">
-                            <h3>Title</h3>
-                            <p>Content</p>
-                        </div>
                     </div>
-                    <button class="arrow right" id="nextBtn">&#10095;</button>
+                    <button class="arrow right" id="nextBtn" onclick="changeSlide(1)">&#10095;</button>
                 </div>
             </div>
             <div class="section" id="peliculas">
@@ -116,7 +104,7 @@
             </div>
             <div class="section" id="contacto">
                 <h2>Contacto</h2>
-                <form action="" method="post">
+                <form>
                     <label for="name">Nombre:</label>
                     <input type="text" name="name" id="name" required>
 
@@ -129,7 +117,7 @@
                     <label for="phone">Teléfono:</label>
                     <input type="tel" name="phone" id="phone">
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit" id="submit">Enviar</button>
                 </form>
             </div>
         </main>
